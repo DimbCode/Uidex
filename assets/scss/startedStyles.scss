@@ -1,0 +1,31 @@
+// Started Styles
+
+body {
+    font-family: $primaryFont;
+    font-size: $primaryFontSize;
+    font-weight: $normalFont;
+    font-style: normal;
+    color: $black;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.main {
+    min-height: 100vh;
+    background: white;
+}
+
+.container {
+    max-width: $containerWidth + $containerPadding * 2;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $containerPadding;
+}
