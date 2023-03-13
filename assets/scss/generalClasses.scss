@@ -1,1 +1,29 @@
 // General Classes
+
+@mixin button($background, $border, $color) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 100px;
+    padding: 16px 24px;
+    border: 1px solid $border;
+    color: $color;
+    background: $background;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: $mediumFont;
+}
+
+.logo {
+
+    &__img {
+        width: 133px;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
