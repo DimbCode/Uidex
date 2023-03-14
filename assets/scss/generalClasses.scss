@@ -27,3 +27,65 @@
     justify-content: center;
     align-items: center;
 }
+
+.title {
+    font-weight: $semiboldFont;
+    font-size: 60px;
+    line-height: 70px;
+
+    &_text-decoration {
+        position: relative;
+        background: none;
+        text-decoration: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: calc(100% - 11px);
+            left: 0;
+            width: 100%;
+            height: 11px;
+            background-image: url("../images/marked-text.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &_thin {
+        font-weight: $normalFont;
+    }
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+
+.user {
+
+    display: flex;
+    align-items: center;
+
+    &__avatar {
+        width: 56px;
+    }
+
+    &__right-section {
+        margin-left: 8px;
+    }
+
+    &__name {
+        margin-bottom: 4px;
+        font-weight: $semiboldFont;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+    }
+
+    &__roles {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+    }
+}
