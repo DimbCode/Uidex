@@ -79,7 +79,7 @@ body {
   color: #1E1E1E;
 }
 
-img, svg {
+img, svg, video {
   max-width: 100%;
   height: auto;
 }
@@ -172,6 +172,13 @@ img, svg {
 .user__roles {
   font-size: 14px;
   line-height: 17px;
+  letter-spacing: 0.03em;
+}
+
+.title-mini {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
   letter-spacing: 0.03em;
 }
 
@@ -400,4 +407,181 @@ img, svg {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.03em;
+}
+
+.companies {
+  width: 100%;
+}
+.companies__header {
+  margin-bottom: 24px;
+}
+.companies__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  max-width: 385px;
+  position: relative;
+}
+.companies__title::after {
+  content: "";
+  width: 107px;
+  height: 54px;
+  position: absolute;
+  bottom: -30px;
+  right: -15px;
+  background-image: url("../images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0;
+}
+.companies__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 70px;
+}
+.companies__item-img {
+  min-width: 165px;
+}
+
+.highlights {
+  width: 100%;
+  padding: 96px 0;
+  background: #FFFAFA;
+}
+.highlights__container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.highlights__img {
+  width: 489px;
+}
+.highlights__header {
+  max-width: 577px;
+}
+.highlights__title {
+  margin-bottom: 24px;
+}
+.highlights__list {
+  margin: 40px 0;
+}
+.highlights__list > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.highlights__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 26px;
+}
+.highlights__list-item-img {
+  width: 44px;
+}
+.highlights__list-text {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+.highlights__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-width: 100px;
+  padding: 16px 24px;
+  border: 1px solid #2F65D5;
+  color: #2F65D5;
+  background: "none";
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.help {
+  width: 100%;
+  min-height: 845px;
+  padding: 90px 0;
+  background: url("../images/help-background1.png") left top/218px no-repeat, url("../images/help-background2.png") right bottom/261px no-repeat;
+}
+.help__header {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.help__title, .help__subtitle {
+  max-width: 650px;
+}
+.help__subtitle {
+  margin-top: 24px;
+}
+.help__content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -8px;
+}
+.help__watch-btn {
+  background: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  position: relative;
+  top: 40px;
+}
+.help__watch-btn::before {
+  content: "";
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  background-image: url("../images/play-icon-white.svg");
+  background-size: 15px 17px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #2F65D5;
+  border-radius: 50%;
+}
+.help__watch-btn-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #2F65D5;
+}
+.help__video {
+  width: 1005px;
+}
+
+.achivements {
+  width: 100%;
+  padding: 90px 0;
+  background: #1E1E1E;
+  color: #FFFFFF;
+}
+.achivements__header {
+  text-align: center;
+  margin-bottom: 60px;
 }

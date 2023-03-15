@@ -1,0 +1,64 @@
+// Help Variables
+
+.help {
+    
+    width: 100%;
+    min-height: 845px; 
+    padding: 90px 0;
+    background: url("../images/help-background1.png") left top / 218px no-repeat,
+                url("../images/help-background2.png") right bottom / 261px no-repeat;
+
+    &__header {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    &__title,
+    &__subtitle {
+        max-width: 650px;
+    }
+
+    &__subtitle {
+        margin-top: 24px;
+    }
+
+    &__content {
+        flex-direction: column;
+        margin-top: -8px;
+    }
+
+    &__watch-btn {
+        background: none;
+        display: inline-flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 16px;
+        position: relative;
+        top: 40px;
+    }
+
+    &__watch-btn::before {
+        content: "";
+        display: inline-block;
+        width: 68px;
+        height: 68px;
+        background-image: url("../images/play-icon-white.svg");
+        background-size: 15px 17px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: $primaryBlue;
+        border-radius: 50%;
+    }
+
+    &__watch-btn-text {
+        font-weight: $mediumFont;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        color: $primaryBlue;
+    }
+
+    &__video {
+        width: 1005px;
+    }
+}

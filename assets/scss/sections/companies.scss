@@ -1,0 +1,42 @@
+// Companies Styles
+
+.companies {
+    
+    width: 100%;
+
+    &__header {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        font-weight: $semiboldFont;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        max-width: 385px;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 107px;
+            height: 54px;
+            position: absolute;
+            bottom: -30px;
+            right: -15px;
+            background-image: url("../images/arrow-right.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 0;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 70px;
+    }
+
+    &__item-img {
+        min-width: 165px;
+    }
+}

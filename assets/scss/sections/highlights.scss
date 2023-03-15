@@ -1,0 +1,52 @@
+// Highlights Styles
+
+.highlights {
+
+    width: 100%;
+    padding: 96px 0;
+    background: $beige;
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 489px;
+    }
+
+    &__header {
+        max-width: 577px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__list {
+        margin: 40px 0;
+
+        & > *:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list-item {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
+
+    &__list-item-img {
+        width: 44px;
+    }
+
+    &__list-text {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+    }
+
+    &__button {
+        @include button("none", $primaryBlue, $primaryBlue);
+    }
+}
