@@ -276,7 +276,7 @@
                     </header>
 
                     <div class="achivements__content">
-                        <div class="achivements__items">
+                        <div class="flex achivements__items">
 
                             <article class="achivement achivements__item">
                                 <img src="assets/images/achivement-img1.svg" alt="" class="achivement__img">
@@ -319,7 +319,7 @@
             <!-- Certificates -->
 
             <section class="certificates">
-                <div class="container">
+                <div class="container flex certificates__container">
 
                     <div class="certificates__section">
 
@@ -400,15 +400,15 @@
             <section class="learn-more">
                 <div class="container">
 
-                    <header class="learn-more__header">
+                    <header class="flex learn-more__header">
                         <h2 class="title-mini learn-more__title">
-                            Gain Industry-Recognised UX Certificates
+                            Learn More From Our Community
                         </h2>
                     </header>
 
-                    <div class="learn-more__content">
+                    <div class="flex learn-more__content">
 
-                        <div class="learn-more__items">
+                        <div class="flex learn-more__items">
 
                             <article class="popular-article learn-more__item">
                                 <img src="assets/images/popular-article-img1.png" alt="" class="popular-article__img">
@@ -451,82 +451,86 @@
         <!-- Footer -->
 
         <footer class="footer">
-            <div class="container">
 
                 <div class="footer__top-section">
+                    <div class="flex container">
 
-                    <div class="footer__left-section">
-                        <h2 class="title footer__title">
-                            Get Inspired Weekly
-                        </h2>
-                        <p class="footer__subtitle">
-                            Join <mark class="footer__subtitle_bold">307,080</mark> designers and get weekly inspiration and design tips in your inbox.
-                        </p>
-                    </div>
+                        <div class="footer__left-section">
+                            <h2 class="footer__title">
+                                Get Inspired Weekly
+                            </h2>
+                            <p class="footer__subtitle">
+                                Join <mark class="footer__subtitle_bold">307,080</mark> designers and get weekly inspiration and design tips in your inbox.
+                            </p>
+                        </div>
 
-                    <div class="footer__right-section">
-                        <div class="search">
+                        <div class="footer__right-section">
                             <form action="#" method="POST" class="search__form">
-                                <input type="text" class="search__input">
-                                <button type="submit" class="search__button">
-                                    Subscribe
-                                </button>
+                                <div class="search">
+                                    <input type="text" class="search__input" placeholder="Your email">
+                                    <button type="submit" class="search__button">
+                                        Subscribe
+                                    </button>
+                                </div>
                             </form>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
                 <div class="footer__bottom-section">
-                    <div class="footer__column">
-                        <div class="logo">
-                            <a href="#" class="logo__link">
-                                <img src="assets/images/logo.png" alt="uidex" class="logo__img">
+                    <div class="container flex">
+
+                        <div class="footer__column">
+                            <div class="logo">
+                                <a href="#" class="logo__link">
+                                    <img src="assets/images/logo.png" alt="uidex" class="logo__img">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="footer__column">
+                            <nav class="footer__nav">
+                                <ul class="flex footer__link-list">
+                                    <li class="footer__link-item">
+                                        <a href="#" class="footer__link">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="footer__link-item">
+                                        <a href="#" class="footer__link">
+                                            Course
+                                        </a>
+                                    </li>
+                                    <li class="footer__link-item">
+                                        <a href="#" class="footer__link">
+                                            About Us
+                                        </a>
+                                    </li>
+                                    <li class="footer__link-item">
+                                        <a href="#" class="footer__link">
+                                            Community
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="flex footer__column footer__column_soc-links">
+                            <a href="#" class="footer__soc-link">
+                                <img src="assets/images/facebook-icon.svg" alt="Facebook" class="footer__soc-link-icon">
+                            </a>
+                            <a href="#" class="footer__soc-link">
+                                <img src="assets/images/instagram-icon.svg" alt="Instagram" class="footer__soc-link-icon">
+                            </a>
+                            <a href="#" class="footer__soc-link">
+                                <img src="assets/images/linkedin-icon.svg" alt="Linkedin" class="footer__soc-link-icon">
                             </a>
                         </div>
-                    </div>
-                    
-                    <div class="footer__column">
-                        <nav class="footer__nav">
-                            <ul class="footer__link-list">
-                                <li class="footer__link-item">
-                                    <a href="#" class="footer__link">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="footer__link-item">
-                                    <a href="#" class="footer__link">
-                                        Course
-                                    </a>
-                                </li>
-                                <li class="footer__link-item">
-                                    <a href="#" class="footer__link">
-                                        About Us
-                                    </a>
-                                </li>
-                                <li class="footer__link-item">
-                                    <a href="#" class="footer__link">
-                                        Community
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
 
-                    <div class="footer__column">
-                        <a href="#" class="footer__soc-link">
-                            <img src="assets/images/facebook-icon.svg" alt="Facebook" class="footer__soc-link-icon">
-                        </a>
-                        <a href="#" class="footer__soc-link">
-                            <img src="assets/images/instagram-icon.svg" alt="Instagram" class="footer__soc-link-icon">
-                        </a>
-                        <a href="#" class="footer__soc-link">
-                            <img src="assets/images/linkedin-icon.svg" alt="Linkedin" class="footer__soc-link-icon">
-                        </a>
                     </div>
                 </div>
 
-            </div>
         </footer>
 
         <!-- Footer End -->

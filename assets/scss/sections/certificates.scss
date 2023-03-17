@@ -1,0 +1,66 @@
+// Certificates Styles
+
+.certificates {
+
+    width: 100%;
+    margin-bottom: 90px;
+
+    &__container {
+        justify-content: space-between;
+    }
+
+    &__header {
+        max-width: 604px;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__spoilers > *:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &__img {
+        width: 489px;
+    }
+}
+
+.spoiler {
+    max-width: 479px;
+    display: flex;
+    flex-direction: column;
+
+    &__open-section {
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(30, 30, 30, 0.1);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: $mediumFont;
+        font-size: 25px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+    }
+
+    &__button {
+        background: none;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__button-img {
+        width: 24px;
+    }
+
+    &__hidden-section {
+        margin-top: 16px;
+        display: none;
+    }
+}

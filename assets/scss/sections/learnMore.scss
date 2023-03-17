@@ -1,0 +1,48 @@
+// Learn More Styles
+
+.learn-more {
+
+    width: 100%;
+    padding: 90px 0;
+    background: $beige2;
+
+    &__header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        max-width: 487px;
+    }
+
+    &__content {
+        flex-direction: column;
+    }
+
+    &__items {
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    &__link {
+        @include button("none", $black, $black);
+        margin-top: 50px;
+    }
+}
+
+.popular-article {
+    flex: 33.333%;
+    text-align: center;
+
+    &__img {
+        width: 384px;
+        margin-bottom: 16px;
+    }
+
+    &__name {
+        font-weight: $mediumFont;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.03em;
+    }
+}

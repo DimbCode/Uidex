@@ -96,3 +96,46 @@
     line-height: 48px;
     letter-spacing: 0.03em;
 }
+
+.search {
+    width: 562px;
+    height: 84px;
+    background: $white;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 4px 4px 24px;
+
+    &__input {
+        height: 100%;
+        width: calc(100% - 70px);
+        background: none;
+        border: none;
+        outline: none;
+        font-weight: $mediumFont;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.03em;
+        color: $white;
+
+        &::placeholder {
+            color: $black;
+        }
+    }
+
+    &__button {
+        height: 100%;
+        border-radius: 52px;
+        cursor: pointer;
+        font-weight: $mediumFont;
+        font-size: 18px;
+        line-height: 28px;
+        color: $white;
+        display: inline-block;
+        padding: 12px 24px;
+        text-align: center;
+        min-width: auto;
+        background: $primaryBlue;
+    }
+}

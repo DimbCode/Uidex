@@ -6,30 +6,34 @@
     padding: 90px 0;
     background: $black;
     color: $white;
+    margin-bottom: 122px;
 
     &__header {
         text-align: center;
         margin-bottom: 60px;
     }
 
-    &__content {
-    }
-
     &__items {
-    }
-
-    &__item {
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
     }
 }
 
 .achivement {
+    flex: 33.333%;
+    text-align: center;
 
     &__img {
+        width: 109px;
+        margin-bottom: 20px;
     }
 
     &__title {
-    }
-
-    &__subtitle {
+        font-weight: $mediumFont;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.03em;
+        margin-bottom: 16px;
     }
 }

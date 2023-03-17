@@ -1,1 +1,82 @@
-// Footer
+// Footer Styles
+
+.footer {
+
+    width: 100%;
+    background: $black;
+    padding: 90px 0 30px 0;
+    color: $white;
+
+    &__top-section {
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+        margin-bottom: 50px;
+        
+        & > .container {
+            justify-content: space-between;
+        }
+    }
+
+    &__left-section {
+        max-width: 440px;
+    }
+
+    &__title {
+        font-weight: $semiboldFont;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0.03em;
+        margin-bottom: 24px;
+    }
+
+    &__subtitle {
+        font-weight: $mediumFont;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+
+        &_bold {
+            font-weight: $boldFont;
+            background: none;
+            color: $white;
+        }
+    }
+
+    &__bottom-section {
+        & > .container {
+            justify-content: space-between;
+        }
+    }
+
+    &__column {
+        &_soc-links {
+            gap: 16px;
+        }
+    }
+
+    &__link-list {
+        gap: 35px;
+    }
+
+    &__link {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: $white;
+    }
+
+    &__soc-link {
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        background: rgba(256, 256, 256, 0.08);
+    }
+
+    &__soc-link-icon {
+        width: 24px;
+    }
+}
