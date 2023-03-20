@@ -30,6 +30,7 @@
         line-height: 22px;
         color: $black;
         position: relative;
+        transition: color .2s ease;
 
         &_active::before {
             content: "";
@@ -42,6 +43,10 @@
             background-size: 100%;
             background-repeat: no-repeat;
         }
+
+        &:hover {
+            color: $primaryBlue;
+        }
     }
 
     &__sign-buttons {
@@ -51,9 +56,21 @@
 
     &__sign-button {
         @include button("none", $white, $white);
+        transition: all .3s ease;
+
+        &:hover {
+            background: $white;
+            color: $black;
+        }
 
         &_reg {
             @include button($white, $white, $black);
+
+            &:hover {
+                background: $black;
+                color: $white;
+                border: 1px solid $black;
+            }
         }
     }
 }

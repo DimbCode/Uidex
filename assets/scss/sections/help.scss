@@ -35,6 +35,10 @@
         gap: 16px;
         position: relative;
         top: 40px;
+
+        &:hover::before {
+            background-color: $black;
+        }
     }
 
     &__watch-btn::before {
@@ -48,6 +52,7 @@
         background-repeat: no-repeat;
         background-color: $primaryBlue;
         border-radius: 50%;
+        transition: all .3s ease;
     }
 
     &__watch-btn-text {

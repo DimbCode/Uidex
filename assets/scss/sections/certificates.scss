@@ -39,6 +39,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
     }
 
     &__title {
@@ -61,6 +62,5 @@
 
     &__hidden-section {
         margin-top: 16px;
-        display: none;
     }
 }

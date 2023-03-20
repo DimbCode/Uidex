@@ -29,3 +29,8 @@ img, svg, video {
     margin: 0 auto;
     padding: 0 $containerPadding;
 }
+
+*::selection {
+    background: $black;
+    color: $white;
+}

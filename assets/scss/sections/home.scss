@@ -41,10 +41,20 @@
     &__button {
         @include button($primaryBlue, $primaryBlue, $white);
         padding: 20px 32px;
+        transition: all .3s ease;
+
+        &:hover {
+            background: $black;
+            border: 1px solid $black;
+        }
     }
 
     &__view-button {
         gap: 16px;
+
+        &:hover::before {
+            background-color: $black;
+        }
     }
 
     &__view-button::before {
@@ -58,6 +68,7 @@
         background-repeat: no-repeat;
         background-color: rgba(47, 101, 213, 0.06);
         border-radius: 50%;
+        transition: all .3s ease;
     }
 
     &__view-button-text {

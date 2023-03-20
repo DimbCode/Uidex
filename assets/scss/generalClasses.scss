@@ -117,7 +117,7 @@
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.03em;
-        color: $white;
+        color: $black;
 
         &::placeholder {
             color: $black;
@@ -137,5 +137,17 @@
         text-align: center;
         min-width: auto;
         background: $primaryBlue;
+        transition: all .3s ease;
+
+        &:hover {
+            background: $black;
+            color: $white;
+        }
     }
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
 }

@@ -48,5 +48,11 @@
 
     &__button {
         @include button("none", $primaryBlue, $primaryBlue);
+        transition: all .3s ease;
+
+        &:hover {
+            background: $primaryBlue;
+            color: $white;
+        }
     }
 }

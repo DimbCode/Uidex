@@ -27,6 +27,12 @@
     &__link {
         @include button("none", $black, $black);
         margin-top: 50px;
+        transition: all .3s ease;
+
+        &:hover {
+            background: $black;
+            color: $white;
+        }
     }
 }
 

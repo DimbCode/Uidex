@@ -63,6 +63,10 @@
         line-height: 22px;
         letter-spacing: 0.02em;
         color: $white;
+
+        &:hover {
+            color: $primaryBlue;
+        }
     }
 
     &__soc-link {
@@ -74,6 +78,11 @@
         text-align: center;
         border-radius: 50%;
         background: rgba(256, 256, 256, 0.08);
+        transition: all .3s ease;
+
+        &:hover {
+            background: $primaryBlue;
+        }
     }
 
     &__soc-link-icon {
